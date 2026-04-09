@@ -1,0 +1,9 @@
+{
+  "app": "Lubna Lab Dashboard",
+  "version": "2026.04.08.6",
+  "exe_url": "https://github.com/mbombo2/lubna-lab-dashboard/releases/download/v2026.04.08.6/LubnaLabDashboard.exe",
+  "sha256": "0fc8444659cfa5cc23b47651acb151cee015af7dc918ddef6b34d8f69273885e",
+  "size_bytes": 54029899,
+  "published_at": "2026-04-09T00:00:00Z",
+  "notes": "Updater test release."
+}
