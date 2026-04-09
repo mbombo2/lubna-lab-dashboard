@@ -1,0 +1,18 @@
+Lubna Lab Dashboard updater setup
+
+1. This updater-enabled build still needs one last manual rollout.
+   Send the offices the new LubnaLabDashboard.exe together with lubna_lab_update.json.
+
+2. Edit lubna_lab_update.json and paste your public manifest URL into manifest_url.
+   The app reads this file next to the exe every time it starts.
+
+3. For each future release:
+   - Build a new LubnaLabDashboard.exe
+   - Upload that exe to a public download URL
+   - Run publish_lubna_update.ps1 with the new exe URL
+   - Upload the generated JSON manifest to the public manifest URL
+
+4. After that, offices can just open the app and accept the update prompt.
+
+Example:
+.\publish_lubna_update.ps1 -Version "2026.04.08.3" -ExeUrl "https://example.com/LubnaLabDashboard.exe" -Notes "Reports search and updater enabled."
